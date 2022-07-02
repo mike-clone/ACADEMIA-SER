@@ -25,9 +25,9 @@ namespace capaDatos
 
             SqlConnection cn = new SqlConnection();
             //cn.ConnectionString = "Data Source = DESKTOP-R0RTQRL; Initial Catalog = academia_ser; Integrated Security = True";
-            //cn.ConnectionString = "Data Source = LAPTOP-TIFHNC74\\SQLEXPRESS; Initial Catalog = academia_ser ; Integrated Security = True";          
+            cn.ConnectionString = "Data Source = LAPTOP-TIFHNC74\\SQLEXPRESS; Initial Catalog = academia_ser ; Integrated Security = True";          
            
-            cn.ConnectionString = "Data Source = MIKES; Initial Catalog = academia_ser ; Integrated Security = True";
+            //cn.ConnectionString = "Data Source = MIKES; Initial Catalog = academia_ser ; Integrated Security = True";
            // cn.ConnectionString = "Data Source = DESKTOP-RL2KS61\\SQLEXPRESS; Initial Catalog = academia_ser ; Integrated Security = True";
             
 
