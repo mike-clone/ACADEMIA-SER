@@ -20,8 +20,15 @@ namespace ACADEMIA_SER
             InitializeComponent();
             listaHojaRespuesta();
             llenarDatosTarjetaDeIngresoId();
+            llenarDatosComboBancoP();
         }
+        private void llenarDatosComboBancoP()
+        {
+            cboNumeroDePregunta.DataSource = LogBancoDePreguntas.Instancia.ListarBanco();
+            cboNumeroDePregunta.DisplayMember = "descripcion_pregunta";
+            cboNumeroDePregunta.ValueMember = "BancoDePreguntasID";
 
+        }
         private void llenarDatosTarjetaDeIngresoId()
         {
             cboTarjetaDeIngreso.DataSource = LogTarjetaDeIngreso.Instancia.ListarAlumnos();
@@ -34,11 +41,9 @@ namespace ACADEMIA_SER
             try
             {
 
-
-
                 entHojaRespuesta c = new entHojaRespuesta();
                 c.HojaDeRespuestaID = int.Parse(txtIdHojaRespuesta.Text.Trim());
-                c.numero_pregunta = int.Parse(txtNumPreguntaHR.Text.Trim());
+                c.numero_pregunta = Convert.ToInt32(cboNumeroDePregunta.SelectedValue);
                 c.TarjetaDeIngresoID = Convert.ToInt32(cboTarjetaDeIngreso.SelectedValue);
                 c.alternativa_pregunta = char.Parse(CbAlterHojaRespuesta.Text.Trim());
 
@@ -59,7 +64,7 @@ namespace ACADEMIA_SER
         public void Limpiar()
         {
             txtIdHojaRespuesta.Clear();
-            txtNumPreguntaHR.Clear();
+          
             CbAlterHojaRespuesta.Text = " ";
 
         }
@@ -71,7 +76,7 @@ namespace ACADEMIA_SER
 
                 entHojaRespuesta c = new entHojaRespuesta();
                 c.HojaDeRespuestaID = int.Parse(txtIdHojaRespuesta.Text.Trim());
-                c.numero_pregunta = int.Parse(txtNumPreguntaHR.Text.Trim());
+                c.numero_pregunta = Convert.ToInt32(cboNumeroDePregunta.SelectedValue);
                 c.TarjetaDeIngresoID = Convert.ToInt32(cboTarjetaDeIngreso.SelectedValue);
                 c.alternativa_pregunta = char.Parse(CbAlterHojaRespuesta.Text.Trim());
 

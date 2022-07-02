@@ -35,15 +35,14 @@
             this.btnInsertar = new System.Windows.Forms.Button();
             this.dgHojaRespuesta = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtNumPreguntaHR = new System.Windows.Forms.TextBox();
-            this.txtIdHojaRespuesta = new System.Windows.Forms.TextBox();
+            this.cboTarjetaDeIngreso = new System.Windows.Forms.ComboBox();
             this.CbAlterHojaRespuesta = new System.Windows.Forms.ComboBox();
+            this.txtIdHojaRespuesta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cboNumeroDePregunta = new System.Windows.Forms.ComboBox();
-            this.cboTarjetaDeIngreso = new System.Windows.Forms.ComboBox();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgHojaRespuesta)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -57,9 +56,9 @@
             this.groupBox4.Controls.Add(this.btnInsertar);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(531, 275);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(486, 179);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
@@ -71,7 +70,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnSalir.Location = new System.Drawing.Point(276, 102);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(160, 37);
             this.btnSalir.TabIndex = 4;
@@ -85,7 +84,7 @@
             this.btnCancealr.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancealr.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnCancealr.Location = new System.Drawing.Point(8, 102);
-            this.btnCancealr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancealr.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancealr.Name = "btnCancealr";
             this.btnCancealr.Size = new System.Drawing.Size(153, 37);
             this.btnCancealr.TabIndex = 4;
@@ -99,7 +98,7 @@
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnActualizar.Location = new System.Drawing.Point(276, 36);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(160, 37);
             this.btnActualizar.TabIndex = 3;
@@ -113,7 +112,7 @@
             this.btnInsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertar.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnInsertar.Location = new System.Drawing.Point(8, 36);
-            this.btnInsertar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsertar.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(153, 37);
             this.btnInsertar.TabIndex = 2;
@@ -125,7 +124,7 @@
             // 
             this.dgHojaRespuesta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgHojaRespuesta.Location = new System.Drawing.Point(539, 59);
-            this.dgHojaRespuesta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.dgHojaRespuesta.Name = "dgHojaRespuesta";
             this.dgHojaRespuesta.RowHeadersWidth = 51;
             this.dgHojaRespuesta.Size = new System.Drawing.Size(478, 185);
@@ -134,8 +133,8 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cboTarjetaDeIngreso);
+            this.groupBox1.Controls.Add(this.cboNumeroDePregunta);
             this.groupBox1.Controls.Add(this.CbAlterHojaRespuesta);
-            this.groupBox1.Controls.Add(this.txtNumPreguntaHR);
             this.groupBox1.Controls.Add(this.txtIdHojaRespuesta);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -143,32 +142,22 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 28);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(507, 386);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // txtNumPreguntaHR
+            // cboTarjetaDeIngreso
             // 
-            this.txtNumPreguntaHR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumPreguntaHR.Location = new System.Drawing.Point(392, 24);
-            this.txtNumPreguntaHR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNumPreguntaHR.Multiline = true;
-            this.txtNumPreguntaHR.Name = "txtNumPreguntaHR";
-            this.txtNumPreguntaHR.Size = new System.Drawing.Size(63, 31);
-            this.txtNumPreguntaHR.TabIndex = 2;
-            // 
-            // txtIdHojaRespuesta
-            // 
-            this.txtIdHojaRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdHojaRespuesta.Location = new System.Drawing.Point(290, 82);
-            this.txtIdHojaRespuesta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtIdHojaRespuesta.Multiline = true;
-            this.txtIdHojaRespuesta.Name = "txtIdHojaRespuesta";
-            this.txtIdHojaRespuesta.Size = new System.Drawing.Size(165, 31);
-            this.txtIdHojaRespuesta.TabIndex = 1;
+            this.cboTarjetaDeIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTarjetaDeIngreso.FormattingEnabled = true;
+            this.cboTarjetaDeIngreso.Location = new System.Drawing.Point(273, 143);
+            this.cboTarjetaDeIngreso.Name = "cboTarjetaDeIngreso";
+            this.cboTarjetaDeIngreso.Size = new System.Drawing.Size(227, 28);
+            this.cboTarjetaDeIngreso.TabIndex = 6;
+            this.cboTarjetaDeIngreso.SelectedIndexChanged += new System.EventHandler(this.cboTarjetaDeIngreso_SelectedIndexChanged);
             // 
             // CbAlterHojaRespuesta
             // 
@@ -180,11 +169,21 @@
             "C",
             "D"});
             this.CbAlterHojaRespuesta.Location = new System.Drawing.Point(48, 259);
-            this.CbAlterHojaRespuesta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CbAlterHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.CbAlterHojaRespuesta.Name = "CbAlterHojaRespuesta";
-            this.CbAlterHojaRespuesta.Size = new System.Drawing.Size(178, 30);
+            this.CbAlterHojaRespuesta.Size = new System.Drawing.Size(223, 30);
             this.CbAlterHojaRespuesta.TabIndex = 1;
             this.CbAlterHojaRespuesta.Text = "Seleccionar";
+            // 
+            // txtIdHojaRespuesta
+            // 
+            this.txtIdHojaRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdHojaRespuesta.Location = new System.Drawing.Point(306, 31);
+            this.txtIdHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdHojaRespuesta.Multiline = true;
+            this.txtIdHojaRespuesta.Name = "txtIdHojaRespuesta";
+            this.txtIdHojaRespuesta.Size = new System.Drawing.Size(165, 31);
+            this.txtIdHojaRespuesta.TabIndex = 1;
             // 
             // label4
             // 
@@ -233,20 +232,10 @@
             // cboNumeroDePregunta
             // 
             this.cboNumeroDePregunta.FormattingEnabled = true;
-            this.cboNumeroDePregunta.Location = new System.Drawing.Point(559, 12);
+            this.cboNumeroDePregunta.Location = new System.Drawing.Point(273, 88);
             this.cboNumeroDePregunta.Name = "cboNumeroDePregunta";
-            this.cboNumeroDePregunta.Size = new System.Drawing.Size(121, 24);
+            this.cboNumeroDePregunta.Size = new System.Drawing.Size(227, 25);
             this.cboNumeroDePregunta.TabIndex = 5;
-            // 
-            // cboTarjetaDeIngreso
-            // 
-            this.cboTarjetaDeIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTarjetaDeIngreso.FormattingEnabled = true;
-            this.cboTarjetaDeIngreso.Location = new System.Drawing.Point(334, 143);
-            this.cboTarjetaDeIngreso.Name = "cboTarjetaDeIngreso";
-            this.cboTarjetaDeIngreso.Size = new System.Drawing.Size(121, 28);
-            this.cboTarjetaDeIngreso.TabIndex = 6;
-            this.cboTarjetaDeIngreso.SelectedIndexChanged += new System.EventHandler(this.cboTarjetaDeIngreso_SelectedIndexChanged);
             // 
             // frmHojaRespuestas
             // 
@@ -254,10 +243,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 587);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.cboNumeroDePregunta);
             this.Controls.Add(this.dgHojaRespuesta);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmHojaRespuestas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmHojaRespuestas";
@@ -278,7 +266,6 @@
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.DataGridView dgHojaRespuesta;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtNumPreguntaHR;
         private System.Windows.Forms.TextBox txtIdHojaRespuesta;
         private System.Windows.Forms.ComboBox CbAlterHojaRespuesta;
         private System.Windows.Forms.Label label4;
