@@ -33,6 +33,51 @@ create  PROCEDURE [dbo].[spActualizarAsistencia]
 	@justificacion char(1),
 	@des_justificacion varchar(100)
 )
+
+--INSERTAR
+
+CREATE PROCEDURE [dbo].[InsertarDetalle] 
+	(
+	@CuadernilloDePreguntasID int,
+	@HojaDeRespuestaID int,
+	@fecha_examen date 	
+
+)
+as
+begin 
+
+	insert into [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA](CuadernilloDePreguntasID,HojaDeRespuestaID,fecha_examen) values
+	(@CuadernilloDePreguntasID,@HojaDeRespuestaID,@fecha_examen)
+end
+
+
+--Actualizar
+
+create  PROCEDURE [dbo].[ActualizarDetalle] 
+	(
+	@CuadernilloDePreguntasID int,
+	@HojaDeRespuestaID int,
+	@fecha_examen date 		
+	)
+as
+begin 
+	update   [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA] set 
+
+	CuadernilloDePreguntasID =@CuadernilloDePreguntasID, 
+	HojaDeRespuestaID=@HojaDeRespuestaID, 
+	fecha_examen =@fecha_examen 
+	
+	where CuadernilloDePreguntasID=@CuadernilloDePreguntasID and HojaDeRespuestaID= @HojaDeRespuestaID
+end
+
+-- listar 
+
+create PROCEDURE [dbo].[Lista_Detalle] 
+AS
+	SELECT*
+	from [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA];
+
+
 as
 begin 
 	update  Asistencia set 
@@ -168,6 +213,7 @@ begin
 end
 
 
+--------------------------------------------------------------------------------------------------------------------
 --Actualizar
 
 create  PROCEDURE [dbo].[ActualizarHoja_Respuesta] 
@@ -187,6 +233,8 @@ begin
 	
 	where HojaDeRespuestaID=@HojaDeRespuestaID
 end
+
+--------------------------------------------------------------------------------------------------------------------
 -- listar 
 
 create PROCEDURE [dbo].[Lista_cuadernillo_hoja] 
@@ -194,6 +242,7 @@ AS
 	SELECT*
 	from [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA];
 
+--------------------------------------------------------------------------------------------------------------------
 --listar
 create PROCEDURE [dbo].[Lista_cuadernillo] 
 AS
@@ -201,6 +250,7 @@ AS
 	SELECT*
 	from CuadernilloDePreguntas;
 	
+--------------------------------------------------------------------------------------------------------------------
 -- inserta
 create PROCEDURE [dbo].[Insertar_cuadernillo] 
 	(
@@ -219,6 +269,10 @@ begin
 	BancoDePreguntasID,SesionDeClaseID) values
 	(@CuadernilloDePreguntasID,@numero_pregunta,@descripcion_pregunta ,@numeroTotal_preguntas,@alternativa_pregunta,@BancoDePreguntasID,@SesionDeClaseID)
 end
+
+
+
+--------------------------------------------------------------------------------------------------------------------
 -- inserta 
 create PROCEDURE [dbo].[Insertar_cuadernillo_hoja] 
 	(
