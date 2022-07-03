@@ -58,39 +58,7 @@ namespace capaDatos
             return lista;
         }
 
-        public List<EntDetalleCuadernillo> ListarDetalle()
-        {
-            SqlCommand cmd = null;
-            List<EntDetalleCuadernillo> listadet = new List<EntDetalleCuadernillo>();
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("Lista_cuadernillo", cn);//
-
-                cmd.CommandType = CommandType.StoredProcedure;//
-                cn.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    EntDetalleCuadernillo det = new EntDetalleCuadernillo();
-                    det.CuadernilloDePreguntasID = Convert.ToInt32(dr["CuadernilloDePreguntasID"]);
-                    det.HojaDeRespuestaID = Convert.ToInt32(dr["HojaDeRespuestaID"]);
-                    det.fecha_examen= Convert.ToDateTime(dr["fecha_examen"]);
-
-                    listadet.Add(det);
-                }
-
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                cmd.Connection.Close();
-            }
-            return listadet;
-        }
+        
 
         public Boolean InsertarCuadernillo(EntCuadernilloDePreguntas cu)
         {
@@ -123,33 +91,7 @@ namespace capaDatos
             return inserta;
         }
 
-        public Boolean InsertarDetalle(EntDetalleCuadernillo det)
-        {
-            SqlCommand cmd = null;
-            Boolean insertadet = false;
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("Insertar_cuadernillo_hoja", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CuadernilloDePreguntasID", det.CuadernilloDePreguntasID);
-                cmd.Parameters.AddWithValue("@HojaDeRespuestaID", det.HojaDeRespuestaID);
-                cmd.Parameters.AddWithValue("@fecha_examen", det.HojaDeRespuestaID);
-                cn.Open();
-                int i = cmd.ExecuteNonQuery();
-                if (i > 0)
-                {
-                    insertadet = true;
-                }
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally { cmd.Connection.Close(); }
-            return insertadet;
-        }
-
+        
 
     }
 }

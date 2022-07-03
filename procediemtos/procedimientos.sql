@@ -286,3 +286,57 @@ begin
 	insert into [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA](CuadernilloDePreguntasID,HojaDeRespuestaID,fecha_examen) values
 	(@CuadernilloDePreguntasID,@HojaDeRespuestaID,@fecha_examen)
 end
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+--INSERTAR
+
+CREATE PROCEDURE [dbo].[InsertarDetalle] 
+	(
+	@CuadernilloDePreguntasID int,
+	@HojaDeRespuestaID int,
+	@fecha_examen date 	
+
+)
+as
+begin 
+
+	insert into [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA](CuadernilloDePreguntasID,HojaDeRespuestaID,fecha_examen) values
+	(@CuadernilloDePreguntasID,@HojaDeRespuestaID,@fecha_examen)
+end
+
+
+----------------------------------------------------------------------------------------------------
+
+--Actualizar
+
+create  PROCEDURE [dbo].[ActualizarDetalle] 
+	(
+	@CuadernilloDePreguntasID int,
+	@HojaDeRespuestaID int,
+	@fecha_examen date 		
+	)
+as
+begin 
+	update   [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA] set 
+
+	CuadernilloDePreguntasID =@CuadernilloDePreguntasID, 
+	HojaDeRespuestaID=@HojaDeRespuestaID, 
+	fecha_examen =@fecha_examen 
+	
+	where CuadernilloDePreguntasID=@CuadernilloDePreguntasID and HojaDeRespuestaID= @HojaDeRespuestaID
+end
+
+
+----------------------------------------------------------------------------------------------------
+-- listar 
+
+create PROCEDURE [dbo].[Lista_Detalle] 
+AS
+	SELECT*
+	from [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA];
+

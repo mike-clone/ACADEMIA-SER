@@ -49,9 +49,19 @@ namespace ACADEMIA_SER
 
         private void btnPreguntas_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmDetalle ar = new FrmDetalle();
+            ar.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
             FrmCuadernilloDePreguntas f = new FrmCuadernilloDePreguntas();
             f.Show();
         }
-
     }
 }

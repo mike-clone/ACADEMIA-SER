@@ -117,9 +117,9 @@
             this.groupBox2.Controls.Add(this.pbAgregar);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(505, 21);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(619, 129);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
@@ -129,7 +129,7 @@
             // 
             this.pictureBox1.Image = global::ACADEMIA_SER.Properties.Resources._107258;
             this.pictureBox1.Location = new System.Drawing.Point(349, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +141,7 @@
             // 
             this.pbSalir.Image = global::ACADEMIA_SER.Properties.Resources._35702;
             this.pbSalir.Location = new System.Drawing.Point(507, 37);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(4);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(67, 62);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,7 +153,7 @@
             // 
             this.pbActualizar.Image = global::ACADEMIA_SER.Properties.Resources._100487;
             this.pbActualizar.Location = new System.Drawing.Point(176, 37);
-            this.pbActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.pbActualizar.Name = "pbActualizar";
             this.pbActualizar.Size = new System.Drawing.Size(75, 62);
             this.pbActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,7 +165,7 @@
             // 
             this.pbAgregar.Image = global::ACADEMIA_SER.Properties.Resources.download_removebg_preview__8_;
             this.pbAgregar.Location = new System.Drawing.Point(8, 37);
-            this.pbAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.pbAgregar.Name = "pbAgregar";
             this.pbAgregar.Size = new System.Drawing.Size(69, 62);
             this.pbAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +177,7 @@
             // 
             this.cbC.AutoSize = true;
             this.cbC.Location = new System.Drawing.Point(143, 28);
-            this.cbC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbC.Margin = new System.Windows.Forms.Padding(4);
             this.cbC.Name = "cbC";
             this.cbC.Size = new System.Drawing.Size(40, 21);
             this.cbC.TabIndex = 15;
@@ -188,7 +188,7 @@
             // 
             this.cbD.AutoSize = true;
             this.cbD.Location = new System.Drawing.Point(201, 28);
-            this.cbD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbD.Margin = new System.Windows.Forms.Padding(4);
             this.cbD.Name = "cbD";
             this.cbD.Size = new System.Drawing.Size(41, 21);
             this.cbD.TabIndex = 16;
@@ -199,7 +199,7 @@
             // 
             this.cbA.AutoSize = true;
             this.cbA.Location = new System.Drawing.Point(8, 28);
-            this.cbA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbA.Margin = new System.Windows.Forms.Padding(4);
             this.cbA.Name = "cbA";
             this.cbA.Size = new System.Drawing.Size(40, 21);
             this.cbA.TabIndex = 13;
@@ -210,7 +210,7 @@
             // 
             this.CbB.AutoSize = true;
             this.CbB.Location = new System.Drawing.Point(73, 28);
-            this.CbB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CbB.Margin = new System.Windows.Forms.Padding(4);
             this.CbB.Name = "CbB";
             this.CbB.Size = new System.Drawing.Size(40, 21);
             this.CbB.TabIndex = 14;
@@ -231,9 +231,9 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(31, 21);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(445, 360);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
@@ -245,9 +245,9 @@
             this.groupBox3.Controls.Add(this.cbA);
             this.groupBox3.Controls.Add(this.CbB);
             this.groupBox3.Location = new System.Drawing.Point(33, 151);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(279, 63);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
@@ -267,7 +267,7 @@
             // 
             this.txtidBanco.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtidBanco.Location = new System.Drawing.Point(45, 23);
-            this.txtidBanco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtidBanco.Margin = new System.Windows.Forms.Padding(4);
             this.txtidBanco.Multiline = true;
             this.txtidBanco.Name = "txtidBanco";
             this.txtidBanco.Size = new System.Drawing.Size(291, 34);
@@ -277,7 +277,7 @@
             // 
             this.txtDesBan.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDesBan.Location = new System.Drawing.Point(33, 247);
-            this.txtDesBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesBan.Multiline = true;
             this.txtDesBan.Name = "txtDesBan";
             this.txtDesBan.Size = new System.Drawing.Size(336, 83);
@@ -309,7 +309,7 @@
             // 
             this.txtNumPre.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumPre.Location = new System.Drawing.Point(235, 80);
-            this.txtNumPre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumPre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumPre.Multiline = true;
             this.txtNumPre.Name = "txtNumPre";
             this.txtNumPre.Size = new System.Drawing.Size(64, 34);
@@ -328,10 +328,13 @@
             // 
             // dgvBancoDePreguntas
             // 
+            this.dgvBancoDePreguntas.AllowUserToAddRows = false;
+            this.dgvBancoDePreguntas.AllowUserToDeleteRows = false;
             this.dgvBancoDePreguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBancoDePreguntas.Location = new System.Drawing.Point(505, 171);
-            this.dgvBancoDePreguntas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvBancoDePreguntas.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBancoDePreguntas.Name = "dgvBancoDePreguntas";
+            this.dgvBancoDePreguntas.ReadOnly = true;
             this.dgvBancoDePreguntas.RowHeadersWidth = 51;
             this.dgvBancoDePreguntas.Size = new System.Drawing.Size(619, 529);
             this.dgvBancoDePreguntas.TabIndex = 23;
@@ -340,7 +343,7 @@
             // 
             this.pictureBox2.Image = global::ACADEMIA_SER.Properties.Resources.featured_planificacion_de_una_clase_sincronica;
             this.pictureBox2.Location = new System.Drawing.Point(31, 419);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(431, 318);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

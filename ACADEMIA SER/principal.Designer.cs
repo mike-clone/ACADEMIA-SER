@@ -33,13 +33,14 @@
             this.btnSesion = new System.Windows.Forms.Button();
             this.btnSilabo = new System.Windows.Forms.Button();
             this.btnHojaRespuesta = new System.Windows.Forms.Button();
-            this.btnPreguntas = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1090, 85);
+            this.button1.Location = new System.Drawing.Point(405, 34);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 73);
@@ -51,7 +52,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(211, 72);
+            this.button2.Location = new System.Drawing.Point(39, 197);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(205, 98);
@@ -63,7 +64,7 @@
             // btnSesion
             // 
             this.btnSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSesion.Location = new System.Drawing.Point(1079, 363);
+            this.btnSesion.Location = new System.Drawing.Point(391, 280);
             this.btnSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSesion.Name = "btnSesion";
             this.btnSesion.Size = new System.Drawing.Size(205, 98);
@@ -75,7 +76,7 @@
             // btnSilabo
             // 
             this.btnSilabo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSilabo.Location = new System.Drawing.Point(710, 60);
+            this.btnSilabo.Location = new System.Drawing.Point(23, 34);
             this.btnSilabo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSilabo.Name = "btnSilabo";
             this.btnSilabo.Size = new System.Drawing.Size(212, 73);
@@ -87,7 +88,7 @@
             // btnHojaRespuesta
             // 
             this.btnHojaRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHojaRespuesta.Location = new System.Drawing.Point(113, 467);
+            this.btnHojaRespuesta.Location = new System.Drawing.Point(32, 515);
             this.btnHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.btnHojaRespuesta.Name = "btnHojaRespuesta";
             this.btnHojaRespuesta.Size = new System.Drawing.Size(203, 91);
@@ -96,23 +97,38 @@
             this.btnHojaRespuesta.UseVisualStyleBackColor = true;
             this.btnHojaRespuesta.Click += new System.EventHandler(this.btnHojaRespuesta_Click);
             // 
-            // btnPreguntas
+            // button3
             // 
-            this.btnPreguntas.Location = new System.Drawing.Point(1117, 199);
-            this.btnPreguntas.Name = "btnPreguntas";
-            this.btnPreguntas.Size = new System.Drawing.Size(127, 87);
-            this.btnPreguntas.TabIndex = 5;
-            this.btnPreguntas.Text = "preguntas";
-            this.btnPreguntas.UseVisualStyleBackColor = true;
-            this.btnPreguntas.Click += new System.EventHandler(this.btnPreguntas_Click);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(32, 388);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(212, 73);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "DETALLE";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(343, 513);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(286, 90);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "CUADERNILLO DE PREGUNTAS";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ACADEMIA_SER.Properties.Resources.Academia_ser__2_;
-            this.ClientSize = new System.Drawing.Size(1363, 713);
-            this.Controls.Add(this.btnPreguntas);
+            this.ClientSize = new System.Drawing.Size(777, 713);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnHojaRespuesta);
             this.Controls.Add(this.btnSilabo);
             this.Controls.Add(this.btnSesion);
@@ -132,7 +148,8 @@
         private System.Windows.Forms.Button btnSesion;
         private System.Windows.Forms.Button btnSilabo;
         private System.Windows.Forms.Button btnHojaRespuesta;
-        private System.Windows.Forms.Button btnPreguntas;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

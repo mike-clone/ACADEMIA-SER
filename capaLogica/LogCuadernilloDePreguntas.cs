@@ -26,20 +26,12 @@ namespace capaLogica
 
         }
 
-        public List<EntDetalleCuadernillo> ListarDetCuadernillo()
-        {
-            return DatCuadernilloDePreguntas.Instancia.ListarDetalle();
-
-        }
 
         public void Insertarcuadernillo(EntCuadernilloDePreguntas cu)
         {
             DatCuadernilloDePreguntas.Instancia.InsertarCuadernillo(cu);
         }
-        public void InsertDetCuadernillo(EntDetalleCuadernillo det)
-        {
-            DatCuadernilloDePreguntas.Instancia.InsertarDetalle(det);
-        }
+       
     }
 
    

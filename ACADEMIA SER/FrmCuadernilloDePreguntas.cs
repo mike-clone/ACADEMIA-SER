@@ -17,7 +17,6 @@ namespace ACADEMIA_SER
         public FrmCuadernilloDePreguntas()
         {
             InitializeComponent();
-            llenarDatosComboHoja();
             llenarDatosComboBancoP();
             llenarDatosComboSesion();
             listarCuadernillo();
@@ -31,15 +30,7 @@ namespace ACADEMIA_SER
 
         }
 
-        
-        private void llenarDatosComboHoja()
-        {
-
-            CboHojaID.DataSource = LogHojaDeRespuesta.Instancia.ListarHojaRespuesta();
-            CboHojaID.DisplayMember = "HojaDeRespuestaID";
-            CboHojaID.ValueMember = "HojaDeRespuestaID";
-
-        }
+     
         private void llenarDatosComboSesion()
         {
             CboSesion.DataSource = LogSesionDeClases.Instancia.ListarSesion();
@@ -50,7 +41,7 @@ namespace ACADEMIA_SER
         public void listarCuadernillo()
         {
             DgvCuadernillo.DataSource = LogCuadernilloDePreguntas.Instancia.ListarCuadernillo();
-            Dgvdetalle.DataSource = LogCuadernilloDePreguntas.Instancia.ListarDetCuadernillo();
+           
         }
         public void limpiar()
         {
@@ -60,8 +51,7 @@ namespace ACADEMIA_SER
             txtpreguntasTotales.Text = "";
             CboAlternativa.Text = "";
             CboSesion.Text = "";
-            CboHojaID.Text = "";
-            dateTimePicker1.Text = "";
+          
 
         }
 
@@ -77,11 +67,7 @@ namespace ACADEMIA_SER
                 ses.alternativa_pregunta = char.Parse((string)CboAlternativa.Text);
                 ses.BancoDePreguntasID = Convert.ToInt32(CboBancoId.SelectedValue);
                 ses.SesionDeClaseID = Convert.ToInt32(CboSesion.SelectedValue);
-                EntDetalleCuadernillo det = new EntDetalleCuadernillo();
-                det.CuadernilloDePreguntasID = Convert.ToInt32(txtCuadernilloId.Text.Trim());
-                det.HojaDeRespuestaID = Convert.ToInt32(CboHojaID.SelectedValue);
-                det.fecha_examen = Convert.ToDateTime(dateTimePicker1.Value);
-
+                LogCuadernilloDePreguntas.Instancia.Insertarcuadernillo(ses);
 
             }
             catch (Exception ex)

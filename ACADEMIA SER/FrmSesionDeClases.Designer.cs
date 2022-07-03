@@ -97,9 +97,12 @@ namespace ACADEMIA_SER
             // 
             // DgwSesion
             // 
+            this.DgwSesion.AllowUserToAddRows = false;
+            this.DgwSesion.AllowUserToDeleteRows = false;
             this.DgwSesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgwSesion.Location = new System.Drawing.Point(74, 377);
             this.DgwSesion.Name = "DgwSesion";
+            this.DgwSesion.ReadOnly = true;
             this.DgwSesion.RowHeadersWidth = 51;
             this.DgwSesion.RowTemplate.Height = 24;
             this.DgwSesion.Size = new System.Drawing.Size(883, 270);
