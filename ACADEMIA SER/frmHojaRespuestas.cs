@@ -24,7 +24,7 @@ namespace ACADEMIA_SER
         }
         private void llenarDatosComboBancoP()
         {
-            cboNumeroDePregunta.DataSource = LogBancoDePreguntas.Instancia.ListarBanco();
+            cboNumeroDePregunta.DataSource = LogCuadernilloDePreguntas.Instancia.ListarCuadernillo();
             cboNumeroDePregunta.DisplayMember = "descripcion_pregunta";
             cboNumeroDePregunta.ValueMember = "BancoDePreguntasID";
 
