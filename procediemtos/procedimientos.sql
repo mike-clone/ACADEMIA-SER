@@ -339,4 +339,39 @@ create PROCEDURE [dbo].[Lista_Detalle]
 AS
 	SELECT*
 	from [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA];
+	
+------------------------------------------------------------------------------------------------------	
+CREATE PROCEDURE [dbo].[spEditarMatriz] 
+(@MatrizDeResultadosID int,
+@HojaDeRespuestaID int,
+@observacion varchar(50),
+@fecha date
+)
+as
+begin 
+	update  MatrizDeResultados set 
+	HojaDeRespuestaID = @HojaDeRespuestaID,
+	observacion = @observacion,
+	fecha = @fecha
+	where MatrizDeResultadosID = @MatrizDeResultadosID
+end
+-------------------------------------------------------------
+CREATE PROCEDURE [dbo].[spInsertarMatriz]
+(@MatrizDeResultadosID int,
+@HojaDeRespuestaID int,
+@observacion varchar(50),
+@fecha date
+)
+as
+begin 
+
+	insert into MatrizDeResultados(MatrizDeResultadosID,HojaDeRespuestaID,observacion,fecha) values
+	(@MatrizDeResultadosID,@HojaDeRespuestaID, @observacion,@fecha)
+end
+
+CREATE PROCEDURE [dbo].[spListarMatriz]
+as
+	SELECT MatrizDeResultadosID, HojaDeRespuestaID, observacion, fecha
+	from MatrizDeResultados  
+GO
 
