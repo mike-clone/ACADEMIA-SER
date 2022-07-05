@@ -191,7 +191,6 @@ AS
 	SELECT HojaDeRespuestaID,numero_pregunta,TarjetaDeIngresoID,alternativa_pregunta
 	from HojaDeRespuesta
 
-
 ----------------------------------------------------------------------------------------------------
 --INSERTAR
 
@@ -270,8 +269,6 @@ begin
 	(@CuadernilloDePreguntasID,@numero_pregunta,@descripcion_pregunta ,@numeroTotal_preguntas,@alternativa_pregunta,@BancoDePreguntasID,@SesionDeClaseID)
 end
 
-
-
 --------------------------------------------------------------------------------------------------------------------
 -- inserta 
 create PROCEDURE [dbo].[Insertar_cuadernillo_hoja] 
@@ -286,9 +283,6 @@ begin
 	insert into [CUADERNILLO DE PREGUNTASHOJA DE RESPUESTA](CuadernilloDePreguntasID,HojaDeRespuestaID,fecha_examen) values
 	(@CuadernilloDePreguntasID,@HojaDeRespuestaID,@fecha_examen)
 end
-
-
-
 
 
 
@@ -375,4 +369,10 @@ as
 	SELECT MatrizDeResultadosID, HojaDeRespuestaID, observacion, fecha
 	from MatrizDeResultados  
 
+-----------------------------------------------------------------------------------
 
+create PROCEDURE [dbo].[ListaSesionD] 
+AS
+	SELECT*
+	from SesionDeClase
+	
