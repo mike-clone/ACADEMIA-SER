@@ -48,6 +48,7 @@
     <Compile Include="LogCuadernilloDePreguntas.cs" />
     <Compile Include="LogDetalleCuadernilloRespuesta.cs" />
     <Compile Include="LogHojaDeRespuesta.cs" />
+    <Compile Include="logMatriz.cs" />
     <Compile Include="LogSesionDeClases.cs" />
     <Compile Include="LogTarjetaDeIngreso.cs" />
     <Compile Include="log_Silabo.cs" />

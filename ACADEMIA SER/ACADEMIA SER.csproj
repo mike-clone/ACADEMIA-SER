@@ -88,6 +88,12 @@
     <Compile Include="FrmSilabo.Designer.cs">
       <DependentUpon>FrmSilabo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMatrixResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatrixResultados.Designer.cs">
+      <DependentUpon>FrmMatrixResultados.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSilabo.resx">
       <DependentUpon>FrmSilabo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrixResultados.resx">
+      <DependentUpon>FrmMatrixResultados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.cs</DependentUpon>

@@ -46,6 +46,7 @@
     <Compile Include="EntCuadernilloDePreguntas.cs" />
     <Compile Include="EntDetalleCuadernillo.cs" />
     <Compile Include="entHojaRespuesta.cs" />
+    <Compile Include="entMatriz.cs" />
     <Compile Include="entSilabo.cs" />
     <Compile Include="EntTarjetaDeIngreso.cs" />
     <Compile Include="EntAsistencia.cs" />

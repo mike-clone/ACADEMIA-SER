@@ -49,6 +49,7 @@
     <Compile Include="DatCuadernilloDePreguntas.cs" />
     <Compile Include="DatDetalleCuadernilloRespuesta.cs" />
     <Compile Include="datHojaRespuesta.cs" />
+    <Compile Include="datMatriz.cs" />
     <Compile Include="DatSesionDeClases.cs" />
     <Compile Include="DatTarjetaDeIngreso.cs" />
     <Compile Include="datBancoDePreguntas.cs" />
