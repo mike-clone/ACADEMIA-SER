@@ -29,6 +29,7 @@ namespace ACADEMIA_SER
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtCuadernilloId = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtNumeroPregunta = new System.Windows.Forms.TextBox();
@@ -62,7 +63,7 @@ namespace ACADEMIA_SER
             this.txtDescripcion.Location = new System.Drawing.Point(416, 98);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(276, 51);
+            this.txtDescripcion.Size = new System.Drawing.Size(330, 51);
             this.txtDescripcion.TabIndex = 2;
             // 
             // txtNumeroPregunta
@@ -85,7 +86,7 @@ namespace ACADEMIA_SER
             this.CboBancoId.FormattingEnabled = true;
             this.CboBancoId.Location = new System.Drawing.Point(416, 183);
             this.CboBancoId.Name = "CboBancoId";
-            this.CboBancoId.Size = new System.Drawing.Size(295, 24);
+            this.CboBancoId.Size = new System.Drawing.Size(330, 24);
             this.CboBancoId.TabIndex = 8;
             // 
             // label1
@@ -160,6 +161,8 @@ namespace ACADEMIA_SER
             // 
             this.DgvCuadernillo.AllowUserToAddRows = false;
             this.DgvCuadernillo.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DgvCuadernillo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvCuadernillo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvCuadernillo.Location = new System.Drawing.Point(32, 336);
             this.DgvCuadernillo.Name = "DgvCuadernillo";
@@ -171,32 +174,35 @@ namespace ACADEMIA_SER
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAgregar.Location = new System.Drawing.Point(613, 343);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(211, 60);
             this.btnAgregar.TabIndex = 22;
-            this.btnAgregar.Text = "agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnLimpiar
             // 
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLimpiar.Location = new System.Drawing.Point(613, 466);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(211, 60);
             this.btnLimpiar.TabIndex = 23;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Text = "LIMPIAR";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSalir.Location = new System.Drawing.Point(613, 572);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(211, 60);
             this.btnSalir.TabIndex = 24;
-            this.btnSalir.Text = "salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtpreguntasTotales
@@ -219,6 +225,7 @@ namespace ACADEMIA_SER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(875, 767);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSalir);

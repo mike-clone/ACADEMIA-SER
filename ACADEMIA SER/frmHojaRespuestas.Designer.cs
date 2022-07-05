@@ -36,13 +36,13 @@
             this.dgHojaRespuesta = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboTarjetaDeIngreso = new System.Windows.Forms.ComboBox();
+            this.cboNumeroDePregunta = new System.Windows.Forms.ComboBox();
             this.CbAlterHojaRespuesta = new System.Windows.Forms.ComboBox();
             this.txtIdHojaRespuesta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cboNumeroDePregunta = new System.Windows.Forms.ComboBox();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgHojaRespuesta)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -55,7 +55,7 @@
             this.groupBox4.Controls.Add(this.btnActualizar);
             this.groupBox4.Controls.Add(this.btnInsertar);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(531, 275);
+            this.groupBox4.Location = new System.Drawing.Point(498, 360);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
@@ -123,11 +123,11 @@
             // dgHojaRespuesta
             // 
             this.dgHojaRespuesta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgHojaRespuesta.Location = new System.Drawing.Point(539, 59);
+            this.dgHojaRespuesta.Location = new System.Drawing.Point(391, 59);
             this.dgHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.dgHojaRespuesta.Name = "dgHojaRespuesta";
             this.dgHojaRespuesta.RowHeadersWidth = 51;
-            this.dgHojaRespuesta.Size = new System.Drawing.Size(478, 185);
+            this.dgHojaRespuesta.Size = new System.Drawing.Size(626, 288);
             this.dgHojaRespuesta.TabIndex = 5;
             // 
             // groupBox1
@@ -145,19 +145,28 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(507, 386);
+            this.groupBox1.Size = new System.Drawing.Size(345, 527);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "DATOS";
             // 
             // cboTarjetaDeIngreso
             // 
             this.cboTarjetaDeIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTarjetaDeIngreso.FormattingEnabled = true;
-            this.cboTarjetaDeIngreso.Location = new System.Drawing.Point(273, 143);
+            this.cboTarjetaDeIngreso.Location = new System.Drawing.Point(28, 291);
             this.cboTarjetaDeIngreso.Name = "cboTarjetaDeIngreso";
             this.cboTarjetaDeIngreso.Size = new System.Drawing.Size(227, 28);
             this.cboTarjetaDeIngreso.TabIndex = 6;
             this.cboTarjetaDeIngreso.SelectedIndexChanged += new System.EventHandler(this.cboTarjetaDeIngreso_SelectedIndexChanged);
+            // 
+            // cboNumeroDePregunta
+            // 
+            this.cboNumeroDePregunta.FormattingEnabled = true;
+            this.cboNumeroDePregunta.Location = new System.Drawing.Point(28, 181);
+            this.cboNumeroDePregunta.Name = "cboNumeroDePregunta";
+            this.cboNumeroDePregunta.Size = new System.Drawing.Size(227, 25);
+            this.cboNumeroDePregunta.TabIndex = 5;
             // 
             // CbAlterHojaRespuesta
             // 
@@ -168,7 +177,7 @@
             "B",
             "C",
             "D"});
-            this.CbAlterHojaRespuesta.Location = new System.Drawing.Point(48, 259);
+            this.CbAlterHojaRespuesta.Location = new System.Drawing.Point(28, 396);
             this.CbAlterHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.CbAlterHojaRespuesta.Name = "CbAlterHojaRespuesta";
             this.CbAlterHojaRespuesta.Size = new System.Drawing.Size(223, 30);
@@ -178,7 +187,7 @@
             // txtIdHojaRespuesta
             // 
             this.txtIdHojaRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdHojaRespuesta.Location = new System.Drawing.Point(306, 31);
+            this.txtIdHojaRespuesta.Location = new System.Drawing.Point(64, 71);
             this.txtIdHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdHojaRespuesta.Multiline = true;
             this.txtIdHojaRespuesta.Name = "txtIdHojaRespuesta";
@@ -189,7 +198,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 215);
+            this.label4.Location = new System.Drawing.Point(8, 349);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(293, 22);
@@ -200,7 +209,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 149);
+            this.label3.Location = new System.Drawing.Point(24, 247);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(252, 22);
@@ -211,7 +220,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 91);
+            this.label2.Location = new System.Drawing.Point(24, 133);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(243, 22);
@@ -222,20 +231,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 31);
+            this.label1.Location = new System.Drawing.Point(31, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID HOJA DE RESPUESTA";
-            // 
-            // cboNumeroDePregunta
-            // 
-            this.cboNumeroDePregunta.FormattingEnabled = true;
-            this.cboNumeroDePregunta.Location = new System.Drawing.Point(273, 88);
-            this.cboNumeroDePregunta.Name = "cboNumeroDePregunta";
-            this.cboNumeroDePregunta.Size = new System.Drawing.Size(227, 25);
-            this.cboNumeroDePregunta.TabIndex = 5;
             // 
             // frmHojaRespuestas
             // 

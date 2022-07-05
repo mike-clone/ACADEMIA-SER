@@ -108,56 +108,61 @@
             this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.RowHeadersWidth = 51;
             this.dgvDetalle.RowTemplate.Height = 24;
-            this.dgvDetalle.Size = new System.Drawing.Size(544, 286);
+            this.dgvDetalle.Size = new System.Drawing.Size(651, 286);
             this.dgvDetalle.TabIndex = 6;
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnAgregar.Font = new System.Drawing.Font("Times New Roman", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(725, 30);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(170, 47);
+            this.btnAgregar.Size = new System.Drawing.Size(170, 62);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "AGREGAR";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnActualizar
             // 
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnActualizar.Font = new System.Drawing.Font("Times New Roman", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Location = new System.Drawing.Point(725, 97);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(170, 47);
+            this.btnActualizar.Size = new System.Drawing.Size(170, 62);
             this.btnActualizar.TabIndex = 8;
             this.btnActualizar.Text = "ACTUALIZAR";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCancelar.Font = new System.Drawing.Font("Times New Roman", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(725, 165);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(170, 47);
+            this.btnCancelar.Size = new System.Drawing.Size(170, 62);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.Font = new System.Drawing.Font("Times New Roman", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(725, 232);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(170, 47);
+            this.btnSalir.Size = new System.Drawing.Size(170, 62);
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(922, 591);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelar);

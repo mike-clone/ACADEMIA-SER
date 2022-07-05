@@ -40,98 +40,106 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(405, 34);
+            this.button1.Location = new System.Drawing.Point(377, 34);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 73);
+            this.button1.Size = new System.Drawing.Size(286, 73);
             this.button1.TabIndex = 0;
             this.button1.Text = "ASISTENCIA";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(39, 197);
+            this.button2.Location = new System.Drawing.Point(23, 197);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(205, 98);
+            this.button2.Size = new System.Drawing.Size(243, 98);
             this.button2.TabIndex = 1;
             this.button2.Text = "BANCO DE PREGUNTAS";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnSesion
             // 
+            this.btnSesion.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSesion.Location = new System.Drawing.Point(412, 179);
+            this.btnSesion.Location = new System.Drawing.Point(377, 197);
             this.btnSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSesion.Name = "btnSesion";
-            this.btnSesion.Size = new System.Drawing.Size(205, 98);
+            this.btnSesion.Size = new System.Drawing.Size(286, 98);
             this.btnSesion.TabIndex = 2;
             this.btnSesion.Text = "SESION DE CLASES";
-            this.btnSesion.UseVisualStyleBackColor = true;
+            this.btnSesion.UseVisualStyleBackColor = false;
             this.btnSesion.Click += new System.EventHandler(this.btnSesion_Click);
             // 
             // btnSilabo
             // 
+            this.btnSilabo.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnSilabo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSilabo.Location = new System.Drawing.Point(23, 34);
             this.btnSilabo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSilabo.Name = "btnSilabo";
-            this.btnSilabo.Size = new System.Drawing.Size(212, 73);
+            this.btnSilabo.Size = new System.Drawing.Size(243, 73);
             this.btnSilabo.TabIndex = 3;
             this.btnSilabo.Text = "SILABO";
-            this.btnSilabo.UseVisualStyleBackColor = true;
+            this.btnSilabo.UseVisualStyleBackColor = false;
             this.btnSilabo.Click += new System.EventHandler(this.btnSilabo_Click);
             // 
             // btnHojaRespuesta
             // 
+            this.btnHojaRespuesta.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnHojaRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHojaRespuesta.Location = new System.Drawing.Point(32, 515);
+            this.btnHojaRespuesta.Location = new System.Drawing.Point(23, 515);
             this.btnHojaRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.btnHojaRespuesta.Name = "btnHojaRespuesta";
-            this.btnHojaRespuesta.Size = new System.Drawing.Size(203, 91);
+            this.btnHojaRespuesta.Size = new System.Drawing.Size(243, 91);
             this.btnHojaRespuesta.TabIndex = 4;
             this.btnHojaRespuesta.Text = "HOJA DE RESPUESTA";
-            this.btnHojaRespuesta.UseVisualStyleBackColor = true;
+            this.btnHojaRespuesta.UseVisualStyleBackColor = false;
             this.btnHojaRespuesta.Click += new System.EventHandler(this.btnHojaRespuesta_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(32, 388);
+            this.button3.Location = new System.Drawing.Point(23, 372);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(212, 73);
+            this.button3.Size = new System.Drawing.Size(243, 89);
             this.button3.TabIndex = 6;
             this.button3.Text = "DETALLE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(377, 334);
+            this.button4.Location = new System.Drawing.Point(377, 372);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(286, 90);
             this.button4.TabIndex = 7;
             this.button4.Text = "CUADERNILLO DE PREGUNTAS";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tnMatriz
             // 
+            this.tnMatriz.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tnMatriz.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tnMatriz.Location = new System.Drawing.Point(423, 496);
+            this.tnMatriz.Location = new System.Drawing.Point(377, 515);
             this.tnMatriz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tnMatriz.Name = "tnMatriz";
-            this.tnMatriz.Size = new System.Drawing.Size(212, 73);
+            this.tnMatriz.Size = new System.Drawing.Size(286, 91);
             this.tnMatriz.TabIndex = 8;
             this.tnMatriz.Text = "MATRIZ DE RESULTADOS";
-            this.tnMatriz.UseVisualStyleBackColor = true;
+            this.tnMatriz.UseVisualStyleBackColor = false;
             this.tnMatriz.Click += new System.EventHandler(this.button5_Click);
             // 
             // principal

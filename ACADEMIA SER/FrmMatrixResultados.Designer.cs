@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboHojaDeRespuestasId = new System.Windows.Forms.ComboBox();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dtPickerRegMatriz = new System.Windows.Forms.DateTimePicker();
@@ -42,14 +43,13 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvMatriz = new System.Windows.Forms.DataGridView();
-            this.cboHojaDeRespuestasId = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatriz)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.cboHojaDeRespuestasId);
             this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.btnAgregar);
@@ -61,7 +61,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(39, 295);
+            this.groupBox1.Location = new System.Drawing.Point(39, 335);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -70,10 +70,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DE LA MATRIZ";
             // 
+            // cboHojaDeRespuestasId
+            // 
+            this.cboHojaDeRespuestasId.FormattingEnabled = true;
+            this.cboHojaDeRespuestasId.Location = new System.Drawing.Point(341, 132);
+            this.cboHojaDeRespuestasId.Name = "cboHojaDeRespuestasId";
+            this.cboHojaDeRespuestasId.Size = new System.Drawing.Size(299, 28);
+            this.cboHojaDeRespuestasId.TabIndex = 10;
+            // 
             // btnModificar
             // 
-            this.btnModificar.BackColor = System.Drawing.Color.Red;
-            this.btnModificar.Location = new System.Drawing.Point(819, 150);
+            this.btnModificar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnModificar.Location = new System.Drawing.Point(819, 215);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(192, 59);
@@ -84,8 +92,8 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Red;
-            this.btnAgregar.Location = new System.Drawing.Point(819, 60);
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAgregar.Location = new System.Drawing.Point(819, 93);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(192, 57);
@@ -164,7 +172,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.Yellow;
+            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(783, 190);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
@@ -177,7 +185,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(783, 107);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
@@ -190,7 +198,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackColor = System.Drawing.Color.Yellow;
+            this.btnNuevo.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(783, 31);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
@@ -211,19 +219,12 @@
             this.dgvMatriz.Size = new System.Drawing.Size(722, 238);
             this.dgvMatriz.TabIndex = 5;
             // 
-            // cboHojaDeRespuestasId
-            // 
-            this.cboHojaDeRespuestasId.FormattingEnabled = true;
-            this.cboHojaDeRespuestasId.Location = new System.Drawing.Point(341, 132);
-            this.cboHojaDeRespuestasId.Name = "cboHojaDeRespuestasId";
-            this.cboHojaDeRespuestasId.Size = new System.Drawing.Size(299, 28);
-            this.cboHojaDeRespuestasId.TabIndex = 10;
-            // 
             // FrmMatrixResultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 688);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1167, 719);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEditar);

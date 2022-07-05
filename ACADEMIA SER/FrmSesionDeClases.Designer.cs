@@ -49,11 +49,11 @@ namespace ACADEMIA_SER
             // 
             // btnActualizar
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(773, 118);
+            this.btnActualizar.BackColor = System.Drawing.Color.Blue;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(724, 118);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(154, 39);
+            this.btnActualizar.Size = new System.Drawing.Size(222, 39);
             this.btnActualizar.TabIndex = 39;
             this.btnActualizar.Text = "Reprogramacion";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -61,11 +61,11 @@ namespace ACADEMIA_SER
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(773, 185);
+            this.btnLimpiar.BackColor = System.Drawing.Color.Blue;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(724, 185);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(154, 39);
+            this.btnLimpiar.Size = new System.Drawing.Size(222, 39);
             this.btnLimpiar.TabIndex = 38;
             this.btnLimpiar.Text = "limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -73,11 +73,11 @@ namespace ACADEMIA_SER
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(773, 259);
+            this.btnSalir.BackColor = System.Drawing.Color.Blue;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(724, 259);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(154, 39);
+            this.btnSalir.Size = new System.Drawing.Size(222, 39);
             this.btnSalir.TabIndex = 37;
             this.btnSalir.Text = "salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -85,11 +85,11 @@ namespace ACADEMIA_SER
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(773, 54);
+            this.btnAgregar.BackColor = System.Drawing.Color.Blue;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(724, 54);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(154, 39);
+            this.btnAgregar.Size = new System.Drawing.Size(222, 39);
             this.btnAgregar.TabIndex = 36;
             this.btnAgregar.Text = "agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -100,12 +100,12 @@ namespace ACADEMIA_SER
             this.DgwSesion.AllowUserToAddRows = false;
             this.DgwSesion.AllowUserToDeleteRows = false;
             this.DgwSesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgwSesion.Location = new System.Drawing.Point(74, 377);
+            this.DgwSesion.Location = new System.Drawing.Point(35, 377);
             this.DgwSesion.Name = "DgwSesion";
             this.DgwSesion.ReadOnly = true;
             this.DgwSesion.RowHeadersWidth = 51;
             this.DgwSesion.RowTemplate.Height = 24;
-            this.DgwSesion.Size = new System.Drawing.Size(883, 270);
+            this.DgwSesion.Size = new System.Drawing.Size(943, 270);
             this.DgwSesion.TabIndex = 35;
             // 
             // label5

@@ -49,9 +49,9 @@ namespace ACADEMIA_SER
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(785, 107);
+            this.btnSalir.BackColor = System.Drawing.Color.Blue;
+            this.btnSalir.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(862, 165);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(202, 42);
@@ -62,10 +62,10 @@ namespace ACADEMIA_SER
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.BackColor = System.Drawing.Color.Blue;
+            this.btnNuevo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.Black;
-            this.btnNuevo.Location = new System.Drawing.Point(785, 24);
+            this.btnNuevo.Location = new System.Drawing.Point(862, 82);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(202, 44);
@@ -77,11 +77,11 @@ namespace ACADEMIA_SER
             // dgvSilabo
             // 
             this.dgvSilabo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSilabo.Location = new System.Drawing.Point(62, 24);
+            this.dgvSilabo.Location = new System.Drawing.Point(36, 24);
             this.dgvSilabo.Name = "dgvSilabo";
             this.dgvSilabo.RowHeadersWidth = 51;
             this.dgvSilabo.RowTemplate.Height = 24;
-            this.dgvSilabo.Size = new System.Drawing.Size(665, 264);
+            this.dgvSilabo.Size = new System.Drawing.Size(795, 264);
             this.dgvSilabo.TabIndex = 9;
             this.dgvSilabo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSilabo_CellDoubleClick);
             // 
@@ -98,9 +98,9 @@ namespace ACADEMIA_SER
             this.grupBoxDatos.Controls.Add(this.label2);
             this.grupBoxDatos.Controls.Add(this.label1);
             this.grupBoxDatos.Controls.Add(this.btnModificar);
-            this.grupBoxDatos.Location = new System.Drawing.Point(62, 320);
+            this.grupBoxDatos.Location = new System.Drawing.Point(36, 332);
             this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(925, 265);
+            this.grupBoxDatos.Size = new System.Drawing.Size(1090, 283);
             this.grupBoxDatos.TabIndex = 12;
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos del Sílabo";
@@ -108,7 +108,7 @@ namespace ACADEMIA_SER
             // dtPickerRegSilabo
             // 
             this.dtPickerRegSilabo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtPickerRegSilabo.Location = new System.Drawing.Point(208, 133);
+            this.dtPickerRegSilabo.Location = new System.Drawing.Point(368, 152);
             this.dtPickerRegSilabo.Margin = new System.Windows.Forms.Padding(4);
             this.dtPickerRegSilabo.Name = "dtPickerRegSilabo";
             this.dtPickerRegSilabo.Size = new System.Drawing.Size(323, 28);
@@ -117,16 +117,16 @@ namespace ACADEMIA_SER
             // txtAutor
             // 
             this.txtAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutor.Location = new System.Drawing.Point(314, 183);
+            this.txtAutor.Location = new System.Drawing.Point(474, 208);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(217, 28);
             this.txtAutor.TabIndex = 19;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(682, 37);
+            this.btnAgregar.BackColor = System.Drawing.Color.Blue;
+            this.btnAgregar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(826, 53);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(202, 44);
@@ -138,7 +138,7 @@ namespace ACADEMIA_SER
             // txtTema
             // 
             this.txtTema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTema.Location = new System.Drawing.Point(314, 93);
+            this.txtTema.Location = new System.Drawing.Point(474, 93);
             this.txtTema.Name = "txtTema";
             this.txtTema.Size = new System.Drawing.Size(217, 28);
             this.txtTema.TabIndex = 18;
@@ -146,7 +146,7 @@ namespace ACADEMIA_SER
             // txtIDsilabo
             // 
             this.txtIDsilabo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDsilabo.Location = new System.Drawing.Point(314, 53);
+            this.txtIDsilabo.Location = new System.Drawing.Point(474, 39);
             this.txtIDsilabo.Name = "txtIDsilabo";
             this.txtIDsilabo.Size = new System.Drawing.Size(217, 28);
             this.txtIDsilabo.TabIndex = 16;
@@ -155,47 +155,47 @@ namespace ACADEMIA_SER
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 124);
+            this.label4.Location = new System.Drawing.Point(121, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 20);
+            this.label4.Size = new System.Drawing.Size(200, 20);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Fecha_Aplicación";
+            this.label4.Text = "FECHA DE APLICACION";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(36, 169);
+            this.label3.Location = new System.Drawing.Point(121, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Autor";
+            this.label3.Text = "AUTOR";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 79);
+            this.label2.Location = new System.Drawing.Point(121, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Tema";
+            this.label2.Text = "TEMA";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 37);
+            this.label1.Location = new System.Drawing.Point(121, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 12;
-            this.label1.Text = "ID_Sílabo";
+            this.label1.Text = "ID SILABO";
             // 
             // btnModificar
             // 
-            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(682, 169);
+            this.btnModificar.BackColor = System.Drawing.Color.Blue;
+            this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(826, 178);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(202, 42);
@@ -209,7 +209,7 @@ namespace ACADEMIA_SER
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ACADEMIA_SER.Properties.Resources.tarea_de_sílabo_hecho_concepto_gente_pequeña_con_lupa_megáfona_y_lápiz_cerca_del_portapapeles_gigante_lista_verificación_194012702;
-            this.ClientSize = new System.Drawing.Size(1055, 624);
+            this.ClientSize = new System.Drawing.Size(1162, 653);
             this.Controls.Add(this.grupBoxDatos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnNuevo);
