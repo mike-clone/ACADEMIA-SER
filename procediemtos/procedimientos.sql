@@ -369,9 +369,10 @@ begin
 	(@MatrizDeResultadosID,@HojaDeRespuestaID, @observacion,@fecha)
 end
 
+-----------------------------------------------------------
 CREATE PROCEDURE [dbo].[spListarMatriz]
 as
 	SELECT MatrizDeResultadosID, HojaDeRespuestaID, observacion, fecha
 	from MatrizDeResultados  
-GO
+
 
