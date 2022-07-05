@@ -33,7 +33,7 @@ namespace ACADEMIA_SER
         private void llenarDatosComboIdHoja()
         {
             cboHojaDeRespuestasId.DataSource = LogHojaDeRespuesta.Instancia.ListarHojaRespuesta();
-            cboHojaDeRespuestasId.DisplayMember = "numero_pregunta";//nombres
+            cboHojaDeRespuestasId.DisplayMember = "HojaDeRespuestaID";//nombres
             cboHojaDeRespuestasId.ValueMember = "HojaDeRespuestaID";
 
         }

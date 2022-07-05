@@ -27,14 +27,14 @@ namespace ACADEMIA_SER
         private void llenarDatosComboIdrespuesta()
         {
             cboHojaDeRespuestaId.DataSource = LogHojaDeRespuesta.Instancia.ListarHojaRespuesta();
-            cboHojaDeRespuestaId.DisplayMember = "descripcion_pregunta";
+            cboHojaDeRespuestaId.DisplayMember = "HojaDeRespuestaID";
             cboHojaDeRespuestaId.ValueMember = "HojaDeRespuestaID";
 
         }
         private void llenarDatosComboidCuadernillo()
         {
             cboCuadernilloID.DataSource = LogCuadernilloDePreguntas.Instancia.ListarCuadernillo();
-            cboCuadernilloID.DisplayMember = "numero_pregunta";
+            cboCuadernilloID.DisplayMember = "CuadernilloDePreguntasID";
             cboCuadernilloID.ValueMember = "CuadernilloDePreguntasID";
 
         }

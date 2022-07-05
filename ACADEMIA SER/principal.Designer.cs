@@ -36,6 +36,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tnMatriz = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -142,12 +143,24 @@
             this.tnMatriz.UseVisualStyleBackColor = false;
             this.tnMatriz.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(733, 416);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(32, 190);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "SALIR";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ACADEMIA_SER.Properties.Resources.Academia_ser__2_;
             this.ClientSize = new System.Drawing.Size(777, 713);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.tnMatriz);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -173,6 +186,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button tnMatriz;
+        private System.Windows.Forms.Button button5;
     }
 }
 
